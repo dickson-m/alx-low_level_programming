@@ -1,13 +1,11 @@
 #include <stdio.h>
 
 /**
- *
  *  main - my project entry point
  *
  * Return: returns 0 when everything works well
  *
- *
-*/
+ */
 
 int main(void)
 {
