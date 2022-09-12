@@ -3,10 +3,7 @@
 #include <time.h>
 
 /**
- *
  * main - project entrypoint
- *
- * n: int variable
  *
  * Return: returns 0 when working fine
  *
