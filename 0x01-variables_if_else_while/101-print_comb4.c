@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 /**
- *
  * main - my project entry point
  *
  * Return: always 0 when all is working well
