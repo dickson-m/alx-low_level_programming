@@ -8,24 +8,20 @@
 
 int main(void)
 {
-	int counter = 0;
-	unsigned long first = 0, second = 1, fib;
+	int i = 0;
+	unsigned long int a = 0, b = 1, next = 0;
 
-	while (counter <= 97)
+	while (i < 98)
 	{
-		fib = first + second;
-		if (counter < 97)
-		{
-			printf("%lu, ", fib);
-		}
-		else
-		{
-			printf("%lu", fib);
-		}
-		first = second;
-		second = fib;
-		counter++;
+		next = a + b;
+		a = b;
+		b = next;
+		printf("%lu", next);
+
+		if (i < 97)
+			printf(", ");
+		i++;
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
