@@ -10,21 +10,25 @@
 
 void print_number(int n)
 {
-int divisor = 1, i, resp;
+	unsigned int i = 1;
 
-if (n < 0)
-{
-	_putchar('-');
-	n *= -1;
-}
+	if (n < 0)
+	{
+		_putchar('-');
+		n *= -1;
+	}
+	if (n == 0)
+		_putchar('0');
+	else
+	{
+		while ((n / i) >= 10)
+			i *= 10;
 
-for (i = 0; n / divisor > 9; i++, divisor *= 10)
-;
-
-for (; divisor >= 1; n %= divisor, divisor /= 10)
-{
-	resp = n / divisor;
-	_putchar('0' + resp);
-
-}
+		while (i > 0)
+		{
+			_putchar((n / i) + '0');
+			n %= i;
+			i /= 10;
+		}
+	}
 }
