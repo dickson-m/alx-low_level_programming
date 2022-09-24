@@ -9,12 +9,22 @@
 
 int main(void)
 {
-	int l;
+	char c = 'a';
 
-	for (l = 97; l <= 122; ++l)
-		putchar(l);
-	for (l = 60; l <= 90; ++l)
-		putchar(l);
-	putchar(10);
+	while (c <= 'z')
+	{
+		putchar(c);
+		c++;
+	}
+
+	c = 'A';
+
+	while (c <= 'Z')
+	{
+		putchar(c);
+		c++;
+	}
+
+	putchar('\n');
 	return (0);
 }
