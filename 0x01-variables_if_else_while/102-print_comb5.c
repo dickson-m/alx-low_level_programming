@@ -1,13 +1,11 @@
-#include<stdio.h>
-
+#include <stdio.h>
+#include <stdlib.h>
 /**
- * main - my project entry point that prints all combinations of two digits with,
- * and space followed and new line
- *
- * Return: returns 0 when all is working well
- *
+ * main - main block
+ * Description: Write a program that prints all possible
+ * different combinations of two digits
+ * Return: 0
  */
-
 int main(void)
 {
 int c;
@@ -50,3 +48,4 @@ while (f < 10)
 putchar('\n');
 return (0);
 }
+
