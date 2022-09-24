@@ -3,9 +3,9 @@
 #include <time.h>
 
 /**
- *
  * main - Prints last random digit number
- *
+ *@last : the condition variable
+ *@n: number
  * Return: return 0
  *
  */
