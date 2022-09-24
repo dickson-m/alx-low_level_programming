@@ -10,24 +10,43 @@
 
 int main(void)
 {
-	int dig1, dig2;
-	for(dig1=0;dig1<=98;dig++)
-	{
+int c;
+int d;
+int e;
+int f = 0;
 
-	for(dig2=dig1+1; dig2<=99; dig2++)
+while (f < 10)
+{
+	e = 0;
+	while (e < 10)
 	{
-		putchar((dig1/10)+'0');
-		putchar((dig1%10)+'0');
-		putchar(32);
-		putchar((dig2/10)+'0');
-		putchar((dig2%10)+'0');
-		if (dig1/10!=9 ||dig1%10!=8)
+		d = 0;
+		while (d < 10)
 		{
-			putchar(44);
-			putchar(32);
+			c = 0;
+			while (c < 10)
+			{
+				if (!(f == c && e == d))
+				{
+					putchar('0' + f);
+					putchar('0' + e);
+					putchar(' ');
+					putchar('0' + d);
+					putchar('0' + c);
+					if (!(f + e == 18 && c + d == 17 && d == 9))
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
+				c++;
+			}
+			d++;
 		}
+		e++;
 	}
-	}
-	putchar(10);
-	return (0);
+	f++;
+}
+putchar('\n');
+return (0);
 }
