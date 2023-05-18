@@ -1,6 +1,5 @@
 #include<stdio.h>
 
-
 /**
  *
  *main - my project entrypoint
