@@ -1,8 +1,7 @@
 #include<stdio.h>
 
 /**
- *
- *main - my project entrypoint
+ * main - my project entrypoint
  *
  * Return: always 0 in here
  */
