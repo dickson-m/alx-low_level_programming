@@ -2,11 +2,9 @@
 
 /**
  * main - my entry point
- *
+ * l - iteration variable
  * Return: returns 0 when everything works well
- *
 */
-
 int main(void)
 {
 	int l;
