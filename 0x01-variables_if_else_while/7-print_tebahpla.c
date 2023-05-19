@@ -1,11 +1,9 @@
 #include <stdio.h>
 
 /**
- *
- *  main - my project entry point
- *
+ * main - my project entry point
+ * int l - itaration variable
  * Return: returns 0 when everything works well
- *
 */
 
 int main(void)
